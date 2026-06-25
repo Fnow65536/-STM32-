@@ -1,55 +1,39 @@
+# ========== 通用C/GCC编译过滤 ==========
 # Prerequisites
 *.d
 
 # Object files
 *.o
-*.ko
-*.obj
 *.elf
 
 # Linker output
-*.ilk
 *.map
-*.exp
 
 # Precompiled Headers
 *.gch
 *.pch
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
+# Executables / 单片机固件
 *.hex
+*.bin
+*.out
 
 # Debug files
-*.dSYM/
 *.su
-*.idb
 *.pdb
-
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
-
-# debug information files
 *.dwo
+
+# ========== Keil MDK 专属过滤（解决LF/CRLF警告） ==========
+# 用户本地窗口、断点私有配置（核心消除你最初的警告）
+*.uvguix.*
+# Keil工程调试参数缓存
+*.uvoptx
+# Keil编译输出文件夹（全部忽略）
+Debug/
+Objects/
+Listings/
+Release/
+
+# ========== 系统缓存文件 ==========
+Thumbs.db
+.DS_Store
