@@ -1,0 +1,39 @@
+# ========== 通用C/GCC编译过滤 ==========
+# Prerequisites
+*.d
+
+# Object files
+*.o
+*.elf
+
+# Linker output
+*.map
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Executables / 单片机固件
+*.hex
+*.bin
+*.out
+
+# Debug files
+*.su
+*.pdb
+*.dwo
+
+# ========== Keil MDK 专属过滤（解决LF/CRLF警告） ==========
+# 用户本地窗口、断点私有配置（核心消除你最初的警告）
+*.uvguix.*
+# Keil工程调试参数缓存
+*.uvoptx
+# Keil编译输出文件夹（全部忽略）
+Debug/
+Objects/
+Listings/
+Release/
+
+# ========== 系统缓存文件 ==========
+Thumbs.db
+.DS_Store
